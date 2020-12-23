@@ -1,9 +1,7 @@
 <template>
-  <router-link to="/"
-    ><div id="home">
-      {{ homeTag }}
-    </div></router-link
-  >
+  <div id="nav-container">
+    <router-link to="/"><div id="home"></div></router-link>
+  </div>
 </template>
 
 <script>
@@ -18,7 +16,7 @@ export default {
 <style>
 #home {
   margin-top: 30px;
-  margin-bottom: 70px;
+  /* margin-bottom: 70px; */
   margin-left: auto;
   margin-right: auto;
   padding: 0.1em;
@@ -34,8 +32,18 @@ export default {
   border: 3px solid #ff4f37;
 }
 
+#nav-container {
+  margin-bottom: 70px;
+}
+
 #home:hover {
   border-color: #000000;
   border: 3px solid black;
+}
+
+#home-tag {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>

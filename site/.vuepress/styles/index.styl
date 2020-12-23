@@ -6,9 +6,41 @@ body {
   background: #fffff1;
 }
 
+ul {
+  list-style: none;
+  padding-left: 21px;
+  -webkit-padding-start: 0px;
+}
+
+
+li a{
+  color: #202020;
+  text-decoration: underline;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  font-size: 21px;
+  position: relative;
+}
+
+li:hover a{
+  text-decoration: none;
+}
+
+li:hover a::before {
+  content: "*";
+  position: absolute;
+  left: -21px;
+}
+
 a {
+  font-weight: 700;
   text-decoration: none;
   color: inherit;
+}
+
+.textblock p a{
+  text-decoration:underline;
+  color: #ff4f37;
 }
 
 .content {
@@ -30,6 +62,9 @@ h1 {
   font-family: "Work Sans";
   font-size: 50px;
   color: rgba(41, 41, 41, 1);
+  text-decoration: underline;
+  text-decoration-color: #9effd7;
+  color: #232323;
 }
 
 code {

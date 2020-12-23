@@ -1,5 +1,5 @@
 <template>
-  <div class="centerColumn">
+  <div class="centerColumn content textblock">
     <TopNavigation></TopNavigation>
     <Content />
   </div>
@@ -20,11 +20,6 @@ export default {
 
 <style>
 h1 {
-  font-family: "Work Sans";
-  font-size: 50px;
-  text-decoration: underline;
-  text-decoration-color: #9effd7;
-  color: #232323;
 }
 .date {
   text-align: right;
@@ -48,5 +43,10 @@ p {
   text-justify: auto;
   font-family: "Radley", arial;
   color: rgba(41, 41, 41, 1);
+}
+
+.textblock p a {
+  text-decoration: underline;
+  color: #ff4f37;
 }
 </style>

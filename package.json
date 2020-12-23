@@ -5,6 +5,7 @@
     },
     "dependencies": {
         "highlight.js": "^10.4.1",
+        "markdown-it-attrs": "^3.0.3",
         "prismjs": "^1.22.0"
     },
     "devDependencies": {
