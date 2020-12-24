@@ -9,4 +9,4 @@ Espero que encuentres lo que estabas buscando.
 * [Blog](/blog/) 
 * [Proyectos](/proyectos/) 
 * [Acerca de mí](/about/) 
-* [Sitios interesantes](/sitios-interesantes/) 
+* [Sitios interesantes](./sitios-interesantes/) 

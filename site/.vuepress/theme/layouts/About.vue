@@ -5,7 +5,11 @@
       <h1 class="subtitle">Acerca de mí</h1>
       <div class="content aboutBox">
         <div class="aboutPhotoContainer">
-          <img src="img/yo.jpg" alt="no se encontró!" class="aboutPhoto" />
+          <img
+            src="/about_img_2.jpg"
+            alt="no se encontró!"
+            class="aboutPhoto"
+          />
         </div>
         <div id="aboutText">
           <Content />
@@ -36,12 +40,18 @@ p {
   text-align: left;
   border: solid;
   border-width: 10px;
-  --photo-width: 65%;
+  --photo-width: 45%;
 }
 
 .aboutBox mark {
   background-color: #d1d1d1;
   color: #121212;
+}
+
+.aboutBox ul {
+  text-decoration: none;
+  padding-left: 2em;
+  list-style-type: "+ ";
 }
 
 .infoBox mark {
@@ -50,7 +60,7 @@ p {
 
 .aboutPhoto {
   width: var(--photo-width);
-  min-width: 200px;
+  /* min-width: 200px; */
   height: auto;
   /* max-width: 100%; */
   height: auto;
@@ -63,7 +73,6 @@ p {
 
 .aboutPhotoContainer {
   padding: 30px;
-  /* background-image: url("../img/plantas.jpg"); */
   display: block;
   margin: auto;
 }
