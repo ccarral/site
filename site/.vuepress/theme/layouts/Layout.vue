@@ -1,5 +1,5 @@
 <template>
-  <div class="centerColumn content textblock">
+  <div class="centerColumn content textblock mobile">
     <TopNavigation></TopNavigation>
     <Content />
     <div id="bottom">
