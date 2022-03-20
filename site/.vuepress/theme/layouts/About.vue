@@ -5,11 +5,7 @@
       <h1 class="subtitle">Acerca de mí</h1>
       <div class="content aboutBox">
         <div class="aboutPhotoContainer">
-          <img
-            src="/about_img_2.jpg"
-            alt="no se encontró!"
-            class="aboutPhoto"
-          />
+          <img src="/foto_acerca.jpg" alt="no se encontró!" class="aboutPhoto" />
         </div>
         <div id="aboutText">
           <Content />
@@ -40,7 +36,7 @@ p {
   text-align: left;
   border: solid;
   border-width: 10px;
-  --photo-width: 45%;
+  --photo-width: 80%;
 }
 
 .aboutBox mark {
@@ -49,9 +45,9 @@ p {
 }
 
 .aboutBox ul {
-  text-decoration: none;
   padding-left: 2em;
   list-style-type: "+ ";
+  font-family: "Radley";
 }
 
 .infoBox mark {

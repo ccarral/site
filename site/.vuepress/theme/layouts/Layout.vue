@@ -9,15 +9,9 @@
 </template>
 
 <script>
-const hljs = require("highlight.js");
 import TopNavigation from "../components/TopNavigation.vue";
 export default {
   components: { TopNavigation },
-  mounted: function() {
-    document.querySelectorAll("pre code").forEach(block => {
-      hljs.highlightBlock(block);
-    });
-  }
 };
 </script>
 
@@ -29,7 +23,18 @@ export default {
   font-family: "Radley", arial;
   color: rgba(41, 41, 41, 1);
 }
+div.lang p a {
+  text-align: right;
+  font-size: 20px;
+  /* font-family: "Radley", arial; */
+  color: #9f83ff;
+  display: block;
+  text-decoration: none;
+}
 
+div.lang p a:hover {
+  text-decoration: underline;
+}
 img {
   margin-top: 2em;
   margin-bottom: 2em;
@@ -59,5 +64,22 @@ p {
 .textblock p a {
   text-decoration: underline;
   color: #ff4f37;
+}
+
+.indent {
+  list-style: none;
+}
+
+ol li {
+  padding-bottom: 1em;
+}
+
+.textblock ul {
+  text-decoration: none;
+  list-style-type: "+ ";
+}
+
+.textblock li {
+  margin-top: 1em;
 }
 </style>
