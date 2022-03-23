@@ -2,10 +2,8 @@
   <div id="aboutPage">
     <div class="centerColumn">
       <TopNavigation></TopNavigation>
-      <h1 class="subtitle">Acerca de mí</h1>
-      <div class="content aboutBox">
+      <div class="content aboutBox mobile">
         <div class="aboutPhotoContainer">
-          <img src="/foto_acerca.jpg" alt="no se encontró!" class="aboutPhoto" />
         </div>
         <div id="aboutText">
           <Content />
@@ -25,18 +23,18 @@ export default {
 
 <style>
 p {
-  font-family: Radley;
+  font-family: "Iosevka";
 }
 
 .aboutBox {
-  /* width: 0%; */
-  max-width: 99%;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
   border: solid;
-  border-width: 10px;
+  border-width: 0.5em;
   --photo-width: 80%;
+  margin-top:2vw;
 }
 
 .aboutBox mark {
@@ -46,8 +44,7 @@ p {
 
 .aboutBox ul {
   padding-left: 2em;
-  list-style-type: "+ ";
-  font-family: "Radley";
+  list-style-type: "* ";
 }
 
 .infoBox mark {
@@ -56,19 +53,18 @@ p {
 
 .aboutPhoto {
   width: var(--photo-width);
-  /* min-width: 200px; */
   height: auto;
-  /* max-width: 100%; */
   height: auto;
   display: block;
   margin-top: 5%;
   margin-bottom: 5%;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 10px;
 }
 
 .aboutPhotoContainer {
-  padding: 30px;
+  padding: 0px;
   display: block;
   margin: auto;
 }

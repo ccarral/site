@@ -1,13 +1,14 @@
 <template>
   <div class="centerColumn content">
+    <h1>Cosmic Cube</h1>
     <p id="description"><Content /></p>
-    <img src="setup3.jpg" class="home" />
+    <img id="landing-img" src="setup3.jpg" class="home" />
   </div>
 </template>
 
 <style>
 #description {
-  padding-top: 10vh;
+  padding-top: 3vh;
 }
 
 .home {
@@ -16,18 +17,25 @@
   margin-right: auto;
 }
 
-ul {
-  list-style-type: none;
+.content ul {
+  list-style-type: "  ";
+  font-family: "Iosevka", arial;
 }
 
-li {
+.content li {
   color: #202020;
   text-decoration: underline;
   padding-top: 1vh;
   padding-bottom: 1vh;
+  font-family: "Iosevka", arial;
 }
 
-li:hover {
+.content li:hover {
   text-decoration: none;
+  font-family: "Iosevka", arial;
+}
+
+#landing-img{
+  border-radius: 10px;
 }
 </style>

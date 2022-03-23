@@ -4,12 +4,18 @@
         "build": "vuepress build site"
     },
     "dependencies": {
+        "axios": "^0.21.1",
         "highlight.js": "^10.4.1",
         "markdown-it-attrs": "^3.0.3",
-        "prismjs": "^1.22.0"
+        "markdown-it-highlightjs": "^3.6.0",
+        "node-fetch": "^2.6.1",
+        "prismjs": "^1.27.0",
+        "typescript": "^4.6.2"
     },
     "devDependencies": {
+        "@vuepress/plugin-prismjs": "^2.0.0-beta.35",
         "vuepress": "^1.7.1",
+        "vuepress-plugin-autometa": "^0.1.13",
         "vuepress-plugin-prismjs": "0.0.1"
     }
 }

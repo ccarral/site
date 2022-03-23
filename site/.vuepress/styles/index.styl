@@ -1,14 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Radley&display=swap');
-@import '~highlight.js/styles/github.css';
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import '~highlight.js/styles/default.css';
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Code+Pro:wght@800&display=swap');
+
+@font-face {
+    font-family: "Iosevka";
+    src: local("Iosevka"),
+        url(/fonts/iosevka-term-ss18-regular.ttf) format("truetype");
+}
 
 body {
   background: #fffff1;
 }
 
 div{
-  font-family: "Radley", arial;
+  font-family: "Iosevka", arial;
 }
 
 
@@ -23,6 +27,7 @@ li a{
 
 li:hover a{
   text-decoration: none;
+  color: #ff4242;
 }
 
 a {
@@ -36,24 +41,30 @@ a {
   font-size: 20px;
   text-justify: auto;
   letter-spacing: 0.5px;
-  font-family: "Radley", arial;
+  font-family: "Iosevka", arial;
   color: rgba(41, 41, 41, 1);
 }
 
 .content p{
     line-height: 175%;
+    font-family: "Iosevka", arial;
 }
 
-.centerColumn {
-  margin-left: auto;
-  margin-right: auto;
-  width: 50vw;
+@media only screen and (min-width: 768px) {
+    .centerColumn {
+      margin-left: auto;
+      margin-right: auto;
+      width: 50vw;
+    }
+}
+
+centerColumn {
+      margin-left: auto;
+      margin-right: auto;
+      width: 90vw;
 }
 
 @media only screen and (max-width: 400px){
-    .mobile{
-        width: 70vw;
-    }
      .mobile p{
         line-height: 200%;
         letter-spacing: 1px;
@@ -61,22 +72,23 @@ a {
 }
 
 h1 {
-  font-family: "Work Sans";
+  font-family: "Source Code Pro", "Work Sans";
   font-size: 50px;
   color: rgba(41, 41, 41, 1);
   text-decoration: underline;
-  text-decoration-color: #9effd7;
+  text-decoration-color: #0bff9c;
   color: #232323;
 }
 
 h2 {
-  font-family: "Work Sans";
+  font-family: "Source Code Pro", "Work Sans";
   font-size: 30px;
   color: #5b5b5b;
 }
 
 code {
-    font-size: 15px;
+    font-size: 18px;
+    font-family:"Iosevka"
 }
 
 table{
@@ -90,6 +102,22 @@ th,td{
     border: 1px solid #ddd;
 }
 
+a[target] svg {
+  display: none !important;
+}
+
+a[target] span { 
+  display: none !important
+} 
+
 th{
     background: #f0f0f0;
+}
+
+div.lang p a {
+  text-align: right;
+  font-size: 20px;
+  color: #9f83ff;
+  display: block;
+  text-decoration: none;
 }
