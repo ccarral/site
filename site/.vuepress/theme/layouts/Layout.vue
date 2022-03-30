@@ -45,14 +45,14 @@ p {
     margin-left: auto;
     margin-right: auto;
     width: 10vw;
-    color: #0bff9c;
+    color: #6ebf8b;
     text-decoration: none;
     font-family: "Iosevka", arial;
 }
 
 .textblock p a {
     text-decoration: underline;
-    color: #ff4f37;
+    color: #d82148;
 }
 
 .indent {
